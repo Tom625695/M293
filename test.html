@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelle mit rowspan und colspan</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .highlight {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="highlight" colspan="2">Kopfzeile</th>
+        </tr>
+        <tr>
+            <td rowspan="2" class="highlight">Links (2 Zeilen hoch)</td>
+            <td>Rechts oben</td>
+        </tr>
+        <tr>
+            <td class="highlight">Rechts unten</td>
+        </tr>
+    </table>
+</body>
+</html>
